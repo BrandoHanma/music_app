@@ -1,0 +1,38 @@
+plugins {
+    id "com.android.application" version "8.2.1"  // Actualizado a 8.2.1
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.example.music_app"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17  // Actualizado a 17
+        targetCompatibility = JavaVersion.VERSION_17  // Actualizado a 17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'  // Actualizado a 17
+    }
+
+    defaultConfig {
+        applicationId = "com.example.music_app"
+        minSdk = flutter.minSdkVersion
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}

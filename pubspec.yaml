@@ -13,12 +13,19 @@ dependencies:
   just_audio: ^0.9.34
   device_info_plus: ^9.0.2
   path_provider: ^2.0.15
-  audio_video_progress_bar: ^1.0.1  # Añade esta línea
+  audio_video_progress_bar: ^1.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "android/assets/img/logo.jpg"
+
 
 flutter:
   uses-material-design: true
